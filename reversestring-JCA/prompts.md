@@ -1,3 +1,5 @@
+# Primer Requierimiento 
+
 Vamos a crear un script en lenguaje Javascript que recibiendo una cadena de texto devuelva el reverse de esa cadena por ejemplo si introduzco AI4Devs devuelve sveD4IA.
 
 Este script debe ser llamado desde un index.html, usa este template : 
@@ -13,6 +15,11 @@ Este script debe ser llamado desde un index.html, usa este template :
 <script src="script.js"></script>
 </body>
 </html>
+
+
+# Segundo Requerimiento
+
+vamos a hacer un par de cambios, primero hagamos que El botón solo aparezca cuando haya texto suficiente, es decir, más de 3 letras (esto deberia estar en hardcode para facilitar el proceso ahora pero debe ser facilmente modificable)
 
 
 

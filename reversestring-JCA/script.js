@@ -1,10 +1,26 @@
-const text = prompt("Introduce una cadena de texto:");
+const MIN_TEXT_LENGTH = 3;
+
+const textInput = document.getElementById("textInput");
+const reverseButton = document.getElementById("reverseButton");
+const result = document.getElementById("result");
 
 function reverseString(value) {
     return value.split("").reverse().join("");
 }
 
-const reversedText = reverseString(text);
+function hasEnoughText(value) {
+    return value.trim().length > MIN_TEXT_LENGTH;
+}
 
-alert(reversedText);
-console.log(reversedText);
+textInput.addEventListener("input", function () {
+    if (hasEnoughText(textInput.value)) {
+        reverseButton.style.display = "inline-block";
+    } else {
+        reverseButton.style.display = "none";
+        result.textContent = "";
+    }
+});
+
+reverseButton.addEventListener("click", function () {
+    result.textContent = reverseString(textInput.value);
+});
