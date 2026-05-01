@@ -11,6 +11,7 @@ Vamos a crear un script en lenguaje Javascript que recibiendo una cadena de text
 
 Este script debe ser llamado desde un index.html, usa este template : 
 
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,6 +23,7 @@ Este script debe ser llamado desde un index.html, usa este template :
 <script src="script.js"></script>
 </body>
 </html>
+```
 
 
 ## Segundo Requerimiento
