@@ -21,5 +21,8 @@ Este script debe ser llamado desde un index.html, usa este template :
 
 vamos a hacer un par de cambios, primero hagamos que El botón solo aparezca cuando haya texto suficiente, es decir, más de 3 letras (esto deberia estar en hardcode para facilitar el proceso ahora pero debe ser facilmente modificable)
 
+# Tercer Requierimiento 
+
+Ahora vamos a hacer que la cadena invertida se actualice en tiempo real, el boton no seria necesario 
 
 

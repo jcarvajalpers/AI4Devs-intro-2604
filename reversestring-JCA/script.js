@@ -1,7 +1,6 @@
 const MIN_TEXT_LENGTH = 3;
 
 const textInput = document.getElementById("textInput");
-const reverseButton = document.getElementById("reverseButton");
 const result = document.getElementById("result");
 
 function reverseString(value) {
@@ -13,14 +12,11 @@ function hasEnoughText(value) {
 }
 
 textInput.addEventListener("input", function () {
-    if (hasEnoughText(textInput.value)) {
-        reverseButton.style.display = "inline-block";
+    const text = textInput.value;
+
+    if (hasEnoughText(text)) {
+        result.textContent = reverseString(text);
     } else {
-        reverseButton.style.display = "none";
         result.textContent = "";
     }
-});
-
-reverseButton.addEventListener("click", function () {
-    result.textContent = reverseString(textInput.value);
 });
