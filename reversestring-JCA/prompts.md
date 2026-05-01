@@ -34,6 +34,13 @@ vamos a hacer un par de cambios, primero hagamos que El botón solo aparezca cua
 
 Ahora vamos a hacer que la cadena invertida se actualice en tiempo real, el boton no seria necesario 
 
+## Intervencion realizada por revision de codigo 
+
+### Intervencion en el index.html
+
+como resultado de una revision de codigo, hay sugerencias a tener en cuenta, verifica y resuelve para el index.html , segun estas indicaciones : In @reversestring-JCA/index.html: - Line 2: The lang attribute is set to "en" while the UI text (the input placeholder on line 10) is in Spanish, causing an accessibility/translation mismatch; update the HTML to make the language declaration and visible text consistent by either changing the html element's lang attribute to "es" or by translating the placeholder text to English so that the declaration (html lang="...") and the input placeholder text match; locate the html tag and the input/placeholder in index.html to apply the change. - Line 10: The text input with id "textInput" lacks an associated label which harms accessibility; add a visible <label> element linked to that input (use for="textInput") or wrap the input in a <label> and provide a clear prompt (e.g., "Texto a invertir" or similar), or if a visible label is not desired add a proper aria-label/aria-labelledby pointing to a descriptive element; ensure the label text clearly describes the field so screen readers and larger click targets work correctly.
+
+
 
 
 
